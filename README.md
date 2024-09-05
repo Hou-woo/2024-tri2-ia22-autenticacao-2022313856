@@ -23,6 +23,8 @@ database.sqlite
 
 # Database
 
+...
+
 import { open, Database } from 'sqlite'
 import sqlite3 from 'sqlite3'
 
@@ -48,6 +50,8 @@ export async function connect() {
   instance = db
   return db
 }
+
+...
 
 # Index.ts
 
@@ -94,6 +98,8 @@ app.listen(port, () => {
   console.log(`Server running on port ${port}`)
 })
 
+...
+
 # Index.html
 
 <!DOCTYPE html>
@@ -126,6 +132,8 @@ app.listen(port, () => {
   </main>
 </body>
 </html>
+
+...
 
 # Main.css
 
@@ -230,6 +238,8 @@ form button[data-action=create] {
   background-color: #28a745;
 }
 
+...
+
 # Main.js
 
 const mainForm = document.querySelector('form')
@@ -302,6 +312,8 @@ document.addEventListener('submit', async (event) => {
     return
   }
 })
+
+...
 
 # Tsconfig.js
 
@@ -413,6 +425,8 @@ document.addEventListener('submit', async (event) => {
     "skipLibCheck": true                                 /* Skip type checking all .d.ts files. */
   }
 }
+
+...
 
 # Package.json
 
